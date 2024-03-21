@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherVue</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1>WeatherVue</h1>
+      <nav>
+        <ul>
+          <li><a href="../html/index.html">Início</a></li>
+          <li><a href="../html/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="weather-container">
+      <div class="header">
+        <h1>Previsão do Tempo</h1>
+      </div>
+      <div class="search-container">
+        <div class="location">
+          <label for="city"></label>
+          <input
+            type="text"
+            id="cidadeInput"
+            placeholder="Digite o nome da cidade"
+            oninput="buscarCidades()"
+            autocomplete="off"
+          />
+          <ul id="listaCidades"></ul>
+        </div>
+      </div>
+      <div class="main-info">
+        <div class="current-weather">
+          <h2 id="location-name">Nome da Cidade</h2>
+          <img id="weather-icon" alt="Condição climática" />
+          <p id="temperature">--°C</p>
+        </div>
+        <div class="additional-info">
+          <p id="max-temp">Máxima: --°C</p>
+          <p id="min-temp">Mínima: --°C</p>
+          <p id="pressure">Pressão: ---- hPa</p>
+          <p id="humidity">Umidade: --%</p>
+          <p id="wind">Vento: -- m/s</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
